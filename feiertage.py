@@ -16,6 +16,9 @@
 
 import datetime
 
+date = datetime.datetime.now().strftime("%Y")
+state = "NI"
+
 state_codes = {
                 'Baden-Württemberg':'BW',
                 'Bayern':'BY',
@@ -166,7 +169,7 @@ class Holidays:
 
     def get_reformation_day(self, state_code):
         """ Reformationstag """
-        valid = ['BB', 'MV', 'SN', 'ST', 'TH']
+        valid = ['BB', 'MV', 'SN', 'ST', 'TH', 'NI']
         if state_code in valid:
             reformation_day = datetime.date(self.year, 10, 31)
             self.holiday_list.append([reformation_day, u'Reformationstag'])
@@ -348,12 +351,14 @@ class EasterDay:
         return easter_day
 
 if __name__ == '__main__':
-    y = raw_input('Bitte geben Sie die Jahreszahl ein: ')
-    print u'Für die Eingabe eines Bundeslandes folgende Abkürzungen verwenden:'
-    print u'< leer > um kein Bundesland auszuwählen'
-    states = state_codes.keys()
-    states.sort()
-    for l in states:
-        print '%s für %s'%(state_codes[l], l)
-    s = raw_input('Bitte geben Sie das gewünschte Bundesland ein: ')
+    #y = raw_input('Bitte geben Sie die Jahreszahl ein: ')
+    #print u'Für die Eingabe eines Bundeslandes folgende Abkürzungen verwenden:'
+    #print u'< leer > um kein Bundesland auszuwählen'
+    #states = state_codes.keys()
+    #states.sort()
+    #for l in states:
+    #    print '%s für %s'%(state_codes[l], l)
+    #s = raw_input('Bitte geben Sie das gewünschte Bundesland ein: ')
+    y = date
+    s = state
     holidays(y, s)
