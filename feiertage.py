@@ -1,18 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#-----------------------------------------------------------------------------#
-# Mit diesem Script können die Feiertage in Deutschland berechnet und         #
-# ausgegeben werden. Wird dem Script ein Bundesland übergeben, werden alle    #
-# Feiertage dieses Bundeslandes ausgegeben. Wird kein Bundesland übergeben,   #
-# so werden nur die bundeseinheitlichen Feiertage ausgegeben.                 #
-#                                                                             #
-# Autor: Stephan John                                                         #
-# Version: 1.1                                                                #
-# Datum: 25.05.2012                                                           #
-#                                                                             #
-# Danke an Paul Wachendorf für die Hinweise                                   #
-#-----------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------------------------#
+# Title:            feiertage.py                                                                #
+# Description:      Mit diesem Script können die Feiertage in Deutschland berechnet und         #
+#                   ausgegeben werden. Wird dem Script ein Bundesland übergeben, werden alle    #
+#                   Feiertage dieses Bundeslandes ausgegeben. Wird kein Bundesland übergeben,   #
+#                   so werden nur die bundeseinheitlichen Feiertage ausgegeben.                 #
+#                   Setzt jetzt das Jahr automatisch und setzt immer Niedersachsen als Land     #
+# Author:           Hinrik Taeger                                                               #
+# Probs:            Stephan John, Paul Wachendorf                                               #
+# Version:          1.0                                                                         #
+# Category:         Basix                                                                       #
+# Tested System:    Linux Mint 19.1                                                             #
+# Date:             18.03.2019                                                                  #
+#-----------------------------------------------------------------------------------------------#
 
 import datetime
 
